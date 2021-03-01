@@ -9,9 +9,9 @@
 - [x] Fazer push do repositório para o GitHub.
 - [x] Adicionar a conta pwebufersa como colaborador do repositório.
 - [x] Baixar VSCode ou Notepad++ ou outro editor de preferência.
-- [ ] Opcional - Instalar plugins do VSCode (Auto Rename, Dracula Theme, Bracket Pair Colorizer 2, Color Highlight, Markdown All in One, XML by Red Hat).
-- [ ] Criar o primeiro site de acordo com a Aula 1 do dia 26/02/2020.
-- [ ] Colocar o seu código secreto no site como dado "meta" no head do index.html.
-- [ ] Fazer o commit e push do site criado, localmente e no GitHub.
+- [x] Opcional - Instalar plugins do VSCode (Auto Rename, Dracula Theme, Bracket Pair Colorizer 2, Color Highlight, Markdown All in One, XML by Red Hat).
+- [x] Criar o primeiro site de acordo com a Aula 1 do dia 26/02/2020.
+- [x] Colocar o seu código secreto no site como dado "meta" no head do index.html.
+- [x] Fazer o commit e push do site criado, localmente e no GitHub.
 ***
 
