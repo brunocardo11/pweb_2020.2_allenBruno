@@ -2,7 +2,7 @@
 
 ```java
 1 if(success!=true){
-2    tryAgrain();
+2   tryAgain();
 3 }else{
 4   improve();       
 5 }
