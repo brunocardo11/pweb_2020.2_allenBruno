@@ -19,4 +19,23 @@
 - [x] Colocar o seu código secreto no site como dado "meta" no head do index.html.
 - [x] Fazer o commit e push do site criado, localmente e no GitHub.
 ***
+🟢 Aprovado
+
+🟡 Aguardando Correção do professor
+
+🔵 Em andamento
+
+⚪️ Pendente
+
+🔴 Não realizado
+
+Exercícios   | Estado | Acessar
+--------- | ------ | ----
+Exercício 1 | 🟢 | [Aqui](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/meuSite)
+Exercício 2 | 🟡 | [Aqui](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio2/meuSite)
+Exercício 3 | ⚪️ | N/A
+
+***
+
+
 
