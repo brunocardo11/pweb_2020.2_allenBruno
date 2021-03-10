@@ -20,5 +20,31 @@
 		<li><a href="listarPessoas.html">Sobre o site</a></li>
 		<li><a href="contato.html">Mande um e-Mail</a></li>
     </ul>
+	<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+		<h1>Fomulário para edição de pessoas:</h1>
+		<form action="listarPessoas.html">
+	
+			<div class="form">
+				<label>Nome completo*:</label>
+				<input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+				<br>
+			</div>
+			<div class="form">
+				<label>Data de nascimento*:</label>
+				<input type="date" name="data" id="data" required>
+			</div class="form">
+			<div>
+				<label>e-Mail*:</label>
+				<input type="email" name="mail" id="mail" placeholder="nome@dominio.com" required>
+			</div>
+			<div class="form">
+				<p class="sexo" id="sexo">Sexo*:</p>
+				<p><input type="radio" name="sexo" id="sexo1" value="masculino" required>Masculino</p>
+				<p><input type="radio" name="sexo" id="sexo2" value="feminino" required>Feminino</p>
+				<p><input type="radio" name="sexo" id="sexo3" value="não informar" required>Não informar</p>
+			</div>
+			<button type="reset" class="button">Limpar</button>
+			<button type="submit" class="button" >Cadastrar!</button>
+		</form>
 </body>
 </html>
