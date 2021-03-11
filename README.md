@@ -1,12 +1,11 @@
 # Repositório Programação Web - 2020.2 - Allen Bruno 
 
 ```java
-1 if(success!=true){
-2   tryAgain();
-3 }else{
-4   improve();       
-5 }
- 
+5 if(success!=true){
+6   tryAgain();
+7 }else{
+8   improve();       
+9 }
 ```
 
 ***
@@ -28,10 +27,10 @@
 
 🔴 Não realizado
 
-Exercícios   | Estado | Acessar
-:---------: | :------: | :----:
-Exercício 1 | 🟢 | [Aqui](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/meuSite)
-Exercício 2 | 🟡 | [Aqui](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio2/meuSite)
-Exercício 3 | ⚪️ | N/A
+Exercícios   | Estado | Acessar | Início | Prazo final
+:---------: | :------: | :----: | :---: | :---:
+Exercício 1 | 🟢 | [Vizualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/meuSite) | 26/02/2021 | 08/03/2021
+Exercício 2 | 🟡 | [Vizualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio2/meuSite) | 05/03/2021 | 22/03/2021
+Exercício 3 | ⚪️ | Indisponível | 22/03/2021 | 29/03/2021
 
 ***
