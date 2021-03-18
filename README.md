@@ -27,10 +27,10 @@
 
 🔴 Não realizado
 
-Exercícios   | Estado | Acessar | Início | Prazo final
-:---------: | :------: | :----: | :---: | :---:
-Exercício 1 | 🟢 | [Vizualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/meuSite) | 26/02/2021 | 08/03/2021
-Exercício 2 | 🟡 | [Vizualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio2/meuSite) | 05/03/2021 | 22/03/2021
-Exercício 3 | ⚪️ | Indisponível | 22/03/2021 | 29/03/2021
+Exercícios   | Estado | Site | Código | Início | Prazo final
+:---------: | :------: | :----: | :---: | :---: | :---:
+Exercício 1 | 🟢 | [Visualizar](https://brunocardo11.github.io/Site/atividade-aula-1.html) | [Visualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/meuSite) | 26/02/2021 | 08/03/2021
+Exercício 2 | 🟡 | [Visualizar](https://brunocardo11.github.io/Site/exercicio-2/index.html) | [Visualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio2/meuSite) | 05/03/2021 | 22/03/2021
+Exercício 3 | ⚪️ | Indisponível | Indisponível | 22/03/2021 | 29/03/2021
 
 ***
