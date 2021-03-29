@@ -66,3 +66,9 @@ tr:hover {
 .form {
   margin-bottom: 15px;
 }
+
+.material-icons {
+  position: relative;
+  left: -5%;
+  top: 5%;
+}
