@@ -69,6 +69,6 @@ tr:hover {
 
 .material-icons {
   position: relative;
-  left: -5%;
-  top: 5%;
+  left: -10px;
+  top: 5px;
 }
