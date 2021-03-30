@@ -60,7 +60,7 @@ public class PessoaController {
 		
 		ModelAndView ModelAndView = new ModelAndView("editarPessoa");
 		ModelAndView.addObject(pessoa);
-		return new ModelAndView("redirect:/listarPessoas");
+		return ModelAndView;
 	}
 	
 	@PostMapping("/editar/{id}")
