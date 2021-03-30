@@ -76,9 +76,11 @@ tr:hover {
 #edit{
 	position: relative;
 	left: 10px;
+	color: blue;
 }
 
 #remove{
 	position: relative;
 	left: 20px;
+	color: blue;
 }

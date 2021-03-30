@@ -36,28 +36,31 @@
 	</ul>
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
     <h1>Fomulário para cadastro de pessoas:</h1>
-    <form method="post">
+    <form 
+    	method="POST" 
+    	th:object="${pessoa}" 
+    	th:action="@{/adicionarPessoa}">
     	<div class="form">
             <label>Nome completo*:</label>
-            <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome completo" th:field="*{nome}" required>
             <br>
         </div>
         <div class="form">
             <label>Data de nascimento*:</label>
-            <input type="date" name="data" id="data" required>
+            <input type="date" name="data" id="data" th:field="*{dataNascimento}" >
         </div>
         <div>
             <label>e-Mail*:</label>
-            <input type="email" name="mail" id="mail" placeholder="nome@dominio.com" required>
+            <input type="text" name="mail" id="mail" placeholder="nome@dominio.com" th:field="*{email}" required>
         </div>
         <div class="form">
             <p class="sexo" id="sexo">Sexo*:</p>
-            <p><input type="radio" name="sexo" id="sexo1" value="masculino" required>Masculino</p>
-            <p><input type="radio" name="sexo" id="sexo2" value="feminino" required>Feminino</p>
-            <p><input type="radio" name="sexo" id="sexo3" value="não informar" required>Não informar</p>
+            <p><input type="radio" name="sexo" id="sexo1" value="masculino" th:field="*{genero}" required>Masculino</p>
+            <p><input type="radio" name="sexo" id="sexo2" value="feminino" th:field="*{genero}"  required>Feminino</p>
+            <p><input type="radio" name="sexo" id="sexo3" value="não informar" th:field="*{genero}" required>Não informar</p>
         </div>
         <button type="reset" class="button">Limpar</button>
-        <button type="submit" class="button" >Cadastrar!</button>
+        <button type="submit" class="button" >Adicionar!</button>
     </form>
     </div>
 </body>
