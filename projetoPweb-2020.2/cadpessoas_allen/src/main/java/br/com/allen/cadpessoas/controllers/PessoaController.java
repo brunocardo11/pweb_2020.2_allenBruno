@@ -16,7 +16,7 @@ public class PessoaController {
 	@Autowired
 	private PessoaRepository pessoaRepo;
 
-	@GetMapping("/listarPessoas.html")
+	@GetMapping("/listarPessoas")
 	public ModelAndView listarPessoas() {
 		Iterable<Pessoa> lista = pessoaRepo.findAll();
 		ModelAndView mav = new ModelAndView("/listarPessoas");
@@ -24,12 +24,12 @@ public class PessoaController {
 		return mav;
 	}
 	
-	@RequestMapping(value="/adicionarPessoa.html", method=RequestMethod.GET)
+	@RequestMapping(value="/adicionarPessoa", method=RequestMethod.GET)
 	public String cad() {
 		return"/adicionarPessoa.html";
 	}
 	
-	@RequestMapping(value="/adicionarPessoa.html", method=RequestMethod.POST)
+	@RequestMapping(value="/adicionarPessoa", method=RequestMethod.POST)
 	public String cad(Pessoa pessoa) {
 		pessoaRepo.save(pessoa);
 		return"/adicionarPessoa.html";

@@ -72,3 +72,13 @@ tr:hover {
   left: -10px;
   top: 5px;
 }
+
+#edit{
+	position: relative;
+	left: 10px;
+}
+
+#remove{
+	position: relative;
+	left: 20px;
+}
