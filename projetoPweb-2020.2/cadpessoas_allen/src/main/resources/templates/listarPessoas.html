@@ -55,8 +55,8 @@
 					<td th:text="${#temporals.format(pessoa.dataNascimento, 'dd/MM/yyy')}"></td>
 					<td><a th:href="'mailto:' +${pessoa.email}"th:text="${pessoa.email}"></a></td>
 					<td th:text="${pessoa.genero}"></td>
-					<td><a th:href="@{/editar/{id}(id=${pessoa.id})}"><span class="material-icons" id="edit">mode_edit</span></a></td>
-					<td><a th:href="@{/remover/{id}(id=${pessoa.id})}"><span class="material-icons" id="remove">person_remove</span></a></td>
+					<td><a th:href="@{/editar/{id}(id=${pessoa.id})}"><span class="material-icons" id="edit" title="Editar">mode_edit</span></a></td>
+					<td><a th:href="@{/remover/{id}(id=${pessoa.id})}"><span class="material-icons" id="remove" title="Remover">person_remove</span></a></td>
 					</tr>
 			</tbody>
 
