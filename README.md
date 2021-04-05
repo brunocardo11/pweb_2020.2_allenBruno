@@ -10,9 +10,6 @@
 
 ***
 ## [Meu Site](https://brunocardo11.github.io)
-***
-![Logo BSI UFERSA](https://bsiangicos.ufersa.edu.br/wp-content/uploads/sites/70/2019/03/bsi-logo.png)
-[Curso Sistemas de Informação](https://bsiangicos.ufersa.edu.br/)
 
 ***
 🟢 Aprovado
