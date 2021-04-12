@@ -78,5 +78,4 @@ public class PessoaController {
 		pessoaRepo.delete(aRemover);
 		return new ModelAndView("redirect:/listarPessoas");
 	}
-	
 }

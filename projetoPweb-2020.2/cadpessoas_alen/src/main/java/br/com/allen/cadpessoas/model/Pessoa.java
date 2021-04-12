@@ -22,7 +22,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="pessoas")
 public class Pessoa implements Serializable{
-
 	private static final long serialVersionUID = 8673988823281337502L;
 
 	@Id
@@ -66,6 +65,4 @@ public class Pessoa implements Serializable{
 	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	
-	
 }
