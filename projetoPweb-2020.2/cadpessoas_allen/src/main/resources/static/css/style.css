@@ -84,3 +84,40 @@ tr:hover {
 	left: 20px;
 	color: blue;
 }
+.conteudo{
+  margin-left:25%;
+  padding:1px 16px;
+  height:1000px;
+}
+
+@media only screen and (max-width: 771px) {
+  html{
+    font-size: 50%;
+  }
+
+  img{
+    width: 64px;
+  }
+
+  .material-icons{
+    font-size: 10px;
+  }
+  ul{
+    width: 115px;
+  }
+  .conteudo{
+    margin-left:105px;
+    padding:1px 16px;
+    height:1000px;
+  }
+
+  .material-icons.md-18{
+    font-size: 12px;
+  }
+
+  table{
+    position: relative;
+    width: 40%;
+    
+  }
+}
