@@ -12,29 +12,29 @@
 </head>
 <body>
 	<ul>
-		<li><a href="/"><span class="material-icons">
+		<li><a href="/"><span class="material-icons md-18">
 			home
 			</span> Início </a></li>
 		<hr />
-		<li><a href="public/noticias.html"><span class="material-icons">
+		<li><a href="public/noticias.html"><span class="material-icons md-18">
 			web
 			</span> Canais de notícias</a></li>
 		<hr />
-		<li><a href="/adicionarPessoa"><span class="material-icons">
+		<li><a href="/adicionarPessoa"><span class="material-icons md-18">
 			person_add
 			</span> Adicionar pessoas</a></li>
-		<li><a href="/listarPessoas"><span class="material-icons">
+		<li><a href="/listarPessoas"><span class="material-icons md-18">
 			people
 			</span> Listar pessoas</a></li>
 		<hr />
-		<li><a href="public/sobre.html"><span class="material-icons">
+		<li><a href="public/sobre.html"><span class="material-icons md-18">
 			info
 			</span> Sobre o site</a></li>
-		<li><a href="public/contato.html"><span class="material-icons">
+		<li><a href="public/contato.html"><span class="material-icons md-18">
 			email
 			</span> Mande um e-Mail</a></li>
 	</ul>
-	<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	<div class="conteudo">
 		<h1>Fomulário para edição de pessoas:</h1>
 		<form action="#" th:action="@{/editar/{id}(id=${pessoa.id})}" th:object="${pessoa}" method="POST">
 			<div class="form">
