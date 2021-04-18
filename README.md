@@ -18,16 +18,32 @@
 
 🔵 Em andamento
 
-🟤 Em correção
-
 ⚪️ Pendente
 
-🔴 Não realizado
+🔴 Atrasado
+<br><br>
 
-Exercícios   | Estado | Site | Código | Tarefa atual | Início | Prazo final
+Exercícios  | Estado | Site | Código | Tarefa atual | Início | Prazo final
 :---------: | :------: | :----: | :---: |  :----: | :---: | :---:
 Exercício 1 | 🟢 | [Visualizar](https://brunocardo11.github.io/Site/atividade-aula-1.html) | [Visualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/meuSite) | Concluído | 26/02/2021 | 08/03/2021
 Exercício 2 | 🟢 | [Visualizar](https://brunocardo11.github.io/Site/exercicio-2/index.html) | [Visualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio2/meuSite) | Concluído | 05/03/2021 | 22/03/2021
-Exercício 3 | 🟡 | Indisponível | [Visualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/projetoPweb-2020.2/cadpessoas_allen) | Concluído | 26/03/2021 | 12/04/2021
+Exercício 3 | 🟡 | Indisponível | [Visualizar](https://github.com/brunocardo11/pweb_2020.2_allenBruno/tree/main/exercicio3/cadpessoas_alen) | Concluído | 26/03/2021 | 12/04/2021
 
 ***
+<br><br>
+
+## **<center> PROJETO FINAL DA DISCIPLINA</center>**
+## **<center> AgroPopShop Allen</center>**
+<br>
+
+### **[Documentação]()**
+
+<br>
+
+### **Milestone 1**
+UseStories | Estado | Tarefa atual | Início | Prazo final
+:---: | :---: | :---: | :---: | :---:
+UseStory 1 | 🔵 | Criando página de cadastro de cliente (HTML) | 13/04/2021 | 19/04/2021
+UseStory 2 | ⚪️ | Não iniciado |  20/04/2021 | 26/04/2021
+UseStory 3 | ⚪️ | Não iniciado | 27/04/2021 | 03/05/2021
+UseStory 4 | ⚪️ | Não iniciado | 04/05/2021 | 10/05/2021
