@@ -32,15 +32,17 @@ Exercício 3 | 🟡 | Indisponível | [Visualizar](https://github.com/brunocardo
 ***
 <br><br>
 
-## **<center> PROJETO FINAL DA DISCIPLINA</center>**
-## **<center> AgroPopShop Allen</center>**
+<h2 align="center"><strong>PROJETO FINAL DA DISCIPLINA</strong></h2>
+
+<h2 align="center"><strong>AgroPopShop Allen </strong></h2>
 <br>
 
 ### **[Documentação]()**
 
 <br>
 
-### **Milestone 1**
+<h3><strong>Milestone 1 </strong></h3>
+
 UseStories | Estado | Tarefa atual | Início | Prazo final
 :---: | :---: | :---: | :---: | :---:
 UseStory 1 | 🔵 | Criando página de cadastro de cliente (HTML) | 13/04/2021 | 19/04/2021
