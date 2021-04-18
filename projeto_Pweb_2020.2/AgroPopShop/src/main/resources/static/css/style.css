@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+li a#active {
+  background-color: #4b0082;
+  color: white;
+}
+
+.button {
+  background-color: #4b0082;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.button12Px {
+	font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 4px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+	background-color:#f5f5f5;
+}
+
+.form {
+  margin-bottom: 15px;
+}
+
+.material-icons {
+  position: relative;
+  left: -10px;
+  top: 5px;
+}
+
+#edit{
+	position: relative;
+	left: 10px;
+	color: blue;
+}
+
+#remove{
+	position: relative;
+	left: 20px;
+	color: blue;
+}
+
+.conteudo{
+  margin-left:25%;
+  padding:1px 16px;
+  height:1000px;
+}
+
+@media only screen and (max-width: 771px) {
+  html{
+    font-size: 50%;
+  }
+
+  img{
+    width: 64px;
+  }
+
+  .material-icons{
+    font-size: 10px;
+  }
+  ul{
+    width: 115px;
+  }
+  .conteudo{
+    margin-left:105px;
+    padding:1px 16px;
+    height:1000px;
+  }
+
+  .material-icons.md-18{
+    font-size: 12px;
+  }
+
+  table{
+    position: relative;
+    width: 40%;
+
+  }
+}
+
