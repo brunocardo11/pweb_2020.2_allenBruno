@@ -1,5 +1,7 @@
 package br.com.allen.agropopshop.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +25,15 @@ public class ClienteController {
 	public String index() {
 		return "index.html";
 	}
+	
+	@GetMapping("/listarClientes")
+	public ModelAndView listarclientes() {
+		List<Cliente> lista = clienteRepo.findAll();
+		ModelAndView ModelAndView = new ModelAndView("/listarClientes");
+		ModelAndView.addObject("clientes", lista);
+		return ModelAndView;
+	}
+	
 	
 	@GetMapping("/adicionarCliente")
 	public ModelAndView formAdicionarPessoa() { 

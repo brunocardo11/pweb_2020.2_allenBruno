@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
+<title>PWeb - by allenBruno</title>
+</head>
+<body>
+	<h1>Lista Clientes</h1>
+	
+	<div class="conteudo">
+		<h1>Lista de pessoas cadastradas</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>Nome completo</th>
+					<th>Data de Nascimento</th>
+					<th>e-Mail</th>
+					<th>Sexo</th>
+					<th>Editar</th>
+					<th>Remover</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="cliente: ${clientes}">
+					<td th:text="${cliente.id}"></td>
+					<td th:text="${cliente.nomeCompleto}"></td>
+					</tr>
+			</tbody>
+
+		</table>
+	</div>
+</body>
+</html>
