@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" th:href="@{/css/style.css}">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-<link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
-<title>PWeb - by allenBruno</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta codigoSemana3="1656224928">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
+    <title>PWeb - by allenBruno</title>
 </head>
 <body>
-	<h1>Cadastro de clientes</h1>
+	<ul>
+		<li><a href="/"><span class="material-icons">
+			home
+			</span> Início </a></li>
+		<hr />
+		<li><a href="public/noticias.html"><span class="material-icons md-18">
+			web
+			</span> Canais de notícias</a></li>
+		<hr />
+		<li><a href="/adicionarPessoa" id="active"><span class="material-icons md-18">
+			person_add
+			</span> Adicionar pessoas</a></li>
+		<li><a href="/listarPessoas"><span class="material-icons md-18">
+			people
+			</span> Listar pessoas</a></li>
+		<hr />
+		<li><a href="public/sobre.html"><span class="material-icons md-18">
+			info
+			</span> Sobre o site</a></li>
+		<li><a href="public/contato.html"><span class="material-icons md-18">
+			email
+			</span> Mande um e-Mail</a></li>
+	</ul>
+    <div class="conteudo">
+    <h1>Fomulário para cadastro de pessoas:</h1>
+    </div>
 </body>
 </html>
