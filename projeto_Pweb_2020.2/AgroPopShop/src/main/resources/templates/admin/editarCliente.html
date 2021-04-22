@@ -20,7 +20,7 @@
 
 	<div id="container-cadastro-cliente">
 	<h1>Cadastro de cliente</h1>
-	<form method="POST" th:object="${cliente}" th:action="@{/adicionarCliente}" id="form-cadastro-cliente">
+	<form method="POST" th:object="${cliente}" th:action="@{/editar/{id}(id=${cliente.id})}" id="form-cadastro-cliente">
 		<div class="campos">	
 			<p>Nome Completo<p>
 			<input type="text" name="nome" id="nome" th:field="*{nomeCompleto}">

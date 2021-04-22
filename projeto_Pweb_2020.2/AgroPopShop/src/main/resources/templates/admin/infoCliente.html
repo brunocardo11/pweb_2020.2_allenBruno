@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<link rel="stylesheet" th:href="@{/css/style-info-cliente.css}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
+<title>Admin AgroPopShop - by allenBruno</title>
+</head>
+<body>
+	<ul>
+		<li><a th:href="@{/}">Início</a></li>
+		<li><a th:href="@{/adicionarCliente}">Cadastro de clientes</a></li>
+		<li><a th:href="@{/listarClientes}">Listar Clientes</a></li>
+		<li style="float:right"><a href="#about">Sobre o Site</a></li>
+	  </ul>
+	  
+	<div id="info-cliente" th:object="${cliente}">
+		<h1>Informações do cliente</h1>
+		<div id="nome-info-cliente">
+			<p>Nome</p>
+			<p th:text="${cliente.nomeCompleto}"></p>
+		</div>
+		<div id="genero-info-cliente">
+			<p>Gênero</p>
+			<p th:text="${cliente.genero}"></p>
+		</div>
+		<div id="email-info-cliente">
+			<p>E-mail</p>
+			<p><a th:href="'mailto:' +${cliente.email}"th:text="${cliente.email}"></a></p>
+		</div>
+		<div id="cep-info-cliente">
+			<p>CEP</p>
+			<p th:text="${cliente.cep}"></p>
+		</div>
+		<div id="estado-info-cliente">
+			<p>Estado</p>
+			<p th:text="${cliente.uf}"></p>
+		</div>
+		<div id="cidade-info-cliente">
+			<p>Cidade</p>
+			<p th:text="${cliente.cidade}"></p>
+		</div>
+		<div id="bairro-info-cliente">
+			<p>Bairro</p>
+			<p th:text="${cliente.bairro}"></p>
+		</div>
+		<div id="endereço-info-cliente">
+			<p>Endereço</p>
+			<p th:text="${cliente.rua}"></p>
+		</div>
+		<div id="numero-info-cliente">
+			<p>Número</p>
+			<p th:text="${cliente.numero}"></p>
+		</div>
+		<div id="complemento-info-cliente">
+			<p>Complemento</p>
+			<p th:text="${cliente.complemento}"></p>
+		</div>
+		<div>
+			<p><a th:href="@{/editar/{id}(id=${cliente.id})}">Editar</a></p>
+		</div>
+		<div>
+			<p><a th:href="@{/remover/{id}(id=${cliente.id})}">Remover</a></p>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

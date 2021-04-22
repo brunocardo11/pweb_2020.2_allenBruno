@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" th:href="@{/css/style.css}">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}" rel="stylesheet">
 <link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
 <title>PWeb - by allenBruno</title>
 </head>
@@ -23,34 +23,16 @@
 				<tr>
 					<th>id</th>
 					<th>Nome</th>
-					<th>Gênero</th>
 					<th>E-mail</th>
-					<th>CEP</th>
-					<th>Estado</th>
-					<th>Cidade</th>
-					<th>Bairro</th>
-					<th>Endereço</th>
-					<th>Número</th>
-					<th>Complemento</th>
-					<th>Editar</th>
-					<th>Remover</th>	
+					<th>Informações</th>	
 				</tr>
 			</thead>
 			<tbody>
 				<tr th:each="cliente: ${clientes}">
 					<td th:text="${cliente.id}"></td>
 					<td th:text="${cliente.nomeCompleto}"></td>
-					<td th:text="${cliente.genero}"></td>
-					<td th:href="'mailto:' +${cliente.email}" th:text="${cliente.email}"></td>
-					<td th:text="${cliente.cep}"></td>
-					<td th:text="${cliente.uf}"></td>
-					<td th:text="${cliente.cidade}"></td>
-					<td th:text="${cliente.bairro}"></td>
-					<td th:text="${cliente.rua}"></td>
-					<td th:text="${cliente.numero}"></td>
-					<td th:text="${cliente.complemento}"></td>
-					<td><a th:href="@{/editar/{id}(id=${cliente.id})}">Editar</a></td>
-					<td><a th:href="@{/remover/{id}(id=${cliente.id})}">Remover</a></td>
+					<td><a th:href="'mailto:' +${cliente.email}" th:text="${cliente.email}"></a></td>
+					<td><a th:href="@{admin/infoCliente/{id}(id=${cliente.id})}"><span class="material-icons md-18">search</span></a></td>
 					</tr>
 			</tbody>
 
