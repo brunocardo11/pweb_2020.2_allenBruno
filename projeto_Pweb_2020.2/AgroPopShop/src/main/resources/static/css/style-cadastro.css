@@ -1,0 +1,63 @@
+*{
+    border: none;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+#container-cadastro-cliente{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background-color: rgb(240, 252, 255);
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+#container-cadastro-cliente h1{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+
+
+
+
+label{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+input{
+    border-bottom: 2px solid rgb(52, 131, 56);
+    font-size: 0.9rem;
+}
+
+#cep{
+   width: 35%;
+}
+
+#nome, #email, #estado, #cidade, #bairro, #rua, #complemento, #secreto{
+    width: 100%;
+}
+
+p{
+    margin-top: 10px;
+}
+
+#registrar-btn{
+    margin-top: 10px;
+    border: 2px solid rgb(29, 90, 32);
+    position: relative;
+    margin-left: 25%;
+    color: white;
+    background-color: rgb(52, 131, 56);
+    width: 250px;
+    font-size: 15pt;
+}
+
+#registrar-btn:hover{
+    background-color: rgb(22, 68, 24);
+}

@@ -37,7 +37,7 @@ public class ClienteController {
 	
 	@GetMapping("/adicionarCliente")
 	public ModelAndView formAdicionarPessoa() { 
-		ModelAndView mav = new ModelAndView("adicionarCliente");
+		ModelAndView mav = new ModelAndView("user/adicionarCliente");
 		mav.addObject(new Cliente());
 		return mav;
 	}
