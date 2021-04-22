@@ -10,30 +10,14 @@
 <title>PWeb - by allenBruno</title>
 </head>
 <body>
+	<ul>
+		<li><a th:href="@{/}">Início</a></li>
+		<li><a th:href="@{/adicionarCliente}">Cadastro de clientes</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li style="float:right"><a href="#about">Sobre o site</a></li>
+	  </ul>
 	<h1>Lista Clientes</h1>
 	
-	<div class="conteudo">
-		<h1>Lista de pessoas cadastradas</h1>
-		<table>
-			<thead>
-				<tr>
-					<th>id</th>
-					<th>Nome completo</th>
-					<th>Data de Nascimento</th>
-					<th>e-Mail</th>
-					<th>Sexo</th>
-					<th>Editar</th>
-					<th>Remover</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr th:each="cliente: ${clientes}">
-					<td th:text="${cliente.id}"></td>
-					<td th:text="${cliente.nomeCompleto}"></td>
-					</tr>
-			</tbody>
-
-		</table>
-	</div>
+	
 </body>
 </html>

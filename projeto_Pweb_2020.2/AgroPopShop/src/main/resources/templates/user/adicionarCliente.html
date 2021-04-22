@@ -16,7 +16,7 @@
 		<li><a th:href="@{/}">Início</a></li>
 		<li><a th:href="@{/adicionarCliente}">Cadastro de clientes</a></li>
 		<li><a href="#contact">Contact</a></li>
-		<li style="float:right"><a href="#about">About</a></li>
+		<li style="float:right"><a href="#about">Sobre o Site</a></li>
 	  </ul>
 
 	<div id="container-cadastro-cliente">
@@ -24,31 +24,31 @@
 	<form method="POST" th:object="${cliente}" th:action="@{/adicionarCliente}" id="form-cadastro-cliente">
 		<div class="campos">	
 			<p>Nome Completo<p>
-			<input type="text" name="nome" id="nome">
+			<input type="text" name="nome" id="nome" th:field="*{nomeCompleto}">
 			<p>e-Mail<p>
-			<input type="email" name="email" id="email">
+			<input type="email" name="email" id="email" th:field="*{email}">
 		</div>
 		<div id="genero">
 			<p class="sexo" id="sexo">Gênero:</p>
-			<p><input type="radio" name="sexo" id="sexo1" value="Masculino" required>Masculino</p>
-			<p><input type="radio" name="sexo" id="sexo2" value="Feminino"  required>Feminino</p>
-			<p><input type="radio" name="sexo" id="sexo3" value="Não Informado" required>Não informar</p>
+			<p><input type="radio" name="sexo" id="sexo1" value="Masculino" th:field="*{genero}" required>Masculino</p>
+			<p><input type="radio" name="sexo" id="sexo2" value="Feminino" th:field="*{genero}"  required>Feminino</p>
+			<p><input type="radio" name="sexo" id="sexo3" value="Não Informado" th:field="*{genero}" required>Não informar</p>
 		</div>
 		<div class="campos">
 			<p>Cep</p>
-			<input type="text" name="cep" id="cep" placeholder="Ex. 12345000">
+			<input type="text" name="cep" id="cep" placeholder="Ex. 12345000" th:field="*{cep}">
 			<p>Estado</p>
-			<input type="text" name="estado" id="estado">
+			<input type="text" name="estado" id="estado" th:field="*{uf}">
 			<p>cidade</p>
-			<input type="text" name="cidade" id="cidade">
+			<input type="text" name="cidade" id="cidade" th:field="*{cidade}">
 			<p for="bairro">Bairro</p>
-			<input type="text" name="bairro" id="bairro">
+			<input type="text" name="bairro" id="bairro" th:field="*{bairro}">
 			<p for="rua">Endereço</p>
-			<input type="text" name="rua" id="rua">
+			<input type="text" name="rua" id="rua" th:field="*{rua}">
 			<p>Número da residência</p>
-			<input type="text" name="numero" id="numero" placeholder="número ou s/n">
+			<input type="text" name="numero" id="numero" placeholder="número ou s/n" th:field="*{numero}">
 			<p for="complemento">Complemento (opcional)</p>
-			<input type="text" name="complemento" id="complemento" placeholder="Apartemento, sala, conjunto, andar, etc.">
+			<input type="text" name="complemento" id="complemento" placeholder="Apartemento, sala, conjunto, andar, etc." th:field="*{complemento}">
 			<p>Campo secreto</p>
 			<input type="text" name="secreto" id="secreto">
 		</div>
