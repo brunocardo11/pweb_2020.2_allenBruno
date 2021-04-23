@@ -19,53 +19,60 @@
 	  </ul>
 	  
 	<div id="info-cliente" th:object="${cliente}">
-		<h1>Informações do cliente</h1>
+		<h2>Informações do cliente</h2>
 		<div id="nome-info-cliente">
-			<p>Nome</p>
+			<h3>Nome:</h3>
 			<p th:text="${cliente.nomeCompleto}"></p>
 		</div>
 		<div id="genero-info-cliente">
-			<p>Gênero</p>
+			<h3>Gênero:</h3>
 			<p th:text="${cliente.genero}"></p>
 		</div>
 		<div id="email-info-cliente">
-			<p>E-mail</p>
+			<h3>E-mail:</h3>
 			<p><a th:href="'mailto:' +${cliente.email}"th:text="${cliente.email}"></a></p>
 		</div>
 		<div id="cep-info-cliente">
-			<p>CEP</p>
+			<h3>CEP:</h3>
 			<p th:text="${cliente.cep}"></p>
 		</div>
 		<div id="estado-info-cliente">
-			<p>Estado</p>
+			<h3>Estado:</h3>
 			<p th:text="${cliente.uf}"></p>
 		</div>
 		<div id="cidade-info-cliente">
-			<p>Cidade</p>
+			<h3>Cidade:</h3>
 			<p th:text="${cliente.cidade}"></p>
 		</div>
 		<div id="bairro-info-cliente">
-			<p>Bairro</p>
+			<h3>Bairro:</h3>
 			<p th:text="${cliente.bairro}"></p>
 		</div>
 		<div id="endereço-info-cliente">
-			<p>Endereço</p>
+			<h3>Endereço:</h3>
 			<p th:text="${cliente.rua}"></p>
 		</div>
 		<div id="numero-info-cliente">
-			<p>Número</p>
+			<h3>Número:</h3>
 			<p th:text="${cliente.numero}"></p>
 		</div>
 		<div id="complemento-info-cliente">
-			<p>Complemento</p>
+			<h3>Complemento:</h3>
 			<p th:text="${cliente.complemento}"></p>
 		</div>
-		<div>
-			<p><a th:href="@{/editar/{id}(id=${cliente.id})}">Editar</a></p>
+		<div id="btn-info-cliente">
+			<div id="editar-info-cliente">
+				<p><a th:href="@{/editar/{id}(id=${cliente.id})}">Editar</a></p>
+			</div>
+			<div id="remover-info-cliente">
+				<p><a th:href="@{/remover/{id}(id=${cliente.id})}">Remover</a></p>
+			</div>
 		</div>
-		<div>
-			<p><a th:href="@{/remover/{id}(id=${cliente.id})}">Remover</a></p>
-		</div>
+	</div>
+
+	<div id="dependente-info-cliente">
+		<h2>Depentendes</h2>
+
 	</div>
 	
 	

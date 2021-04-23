@@ -1,0 +1,23 @@
+#lista-clientes{
+    margin-left: 30%;
+}
+
+#lista-clientes td{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#lista-clientes table{
+    border-collapse: collapse;
+    position: relative;
+}
+
+#lista-clientes table, th, td{
+    border: 1px solid black;
+}
+
+#lista-clientes th{
+    background-color: rgb(44, 133, 32);
+    color: white;
+}

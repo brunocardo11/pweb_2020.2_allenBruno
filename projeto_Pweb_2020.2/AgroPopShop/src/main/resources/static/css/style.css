@@ -10,7 +10,7 @@ body{
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
     overflow: hidden;
     background-color: rgb(44, 133, 32);
   }
