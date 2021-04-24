@@ -18,42 +18,27 @@
 		<li style="float:right"><a href="#about">Sobre o Site</a></li>
 	  </ul>
 
-	<!--  
 	<div id="container-cadastro-cliente">
-	<h1>Cadastro de cliente</h1>
+	<h1>Cadastro de produtos</h1>
 	<form method="POST" th:object="${produto}" th:action="@{/admin/adicionarProduto}" id="form-cadastro-cliente">
 		<div class="campos">	
-			<p>Nome Do Produto<p>
-			<input type="text" name="nome" id="nome" th:field="*{nomeProduto}">
-			<p>e-Mail<p>
-			<input type="email" name="email" id="email" th:field="*{email}">
+			<p>Nome do produto<p>
+			<input type="text" name="nome" id="nomeProduto" th:field="*{nomeProduto}">
+			<p>Marca<p>
+			<input type="text" name="marca" id="marca" th:field="*{marca}">
+			<p>Preço<p>
+			<input type="text" name="preço" id="preço" th:field="*{preço}" placeholder="EX:12.58" title="EX:12.58">
+			<p>Peso<p>
+			<input type="text" name="peso" id="peso" th:field="*{peso}" placeholder="EX:0.3" title="EX:0.3">
+			<p>Altura<p>
+			<input type="text" name="altura" id="altura" th:field="*{altura}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
+			<p>Largura<p>
+			<input type="text" name="largura" id="largura" th:field="*{largura}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
+			<p>Profundidade<p>
+			<input type="text" name="profundidade" id="profundidade" th:field="*{profundidade}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
 		</div>
-		<div id="genero">
-			<p class="sexo" id="sexo">Gênero:</p>
-			<p><input type="radio" name="sexo" id="sexo1" value="Masculino" th:field="*{genero}" required>Masculino</p>
-			<p><input type="radio" name="sexo" id="sexo2" value="Feminino" th:field="*{genero}"  required>Feminino</p>
-			<p><input type="radio" name="sexo" id="sexo3" value="Não Informado" th:field="*{genero}" required>Não informar</p>
-		</div>
-		<div class="campos">
-			<p>Cep</p>
-			<input type="text" name="cep" id="cep" placeholder="Ex. 12345000" th:field="*{cep}">
-			<p>Estado</p>
-			<input type="text" name="estado" id="estado" th:field="*{uf}">
-			<p>cidade</p>
-			<input type="text" name="cidade" id="cidade" th:field="*{cidade}">
-			<p for="bairro">Bairro</p>
-			<input type="text" name="bairro" id="bairro" th:field="*{bairro}">
-			<p for="rua">Endereço</p>
-			<input type="text" name="rua" id="rua" th:field="*{rua}">
-			<p>Número da residência</p>
-			<input type="text" name="numero" id="numero" placeholder="número ou s/n" th:field="*{numero}">
-			<p for="complemento">Complemento (opcional)</p>
-			<input type="text" name="complemento" id="complemento" placeholder="Apartemento, sala, conjunto, andar, etc." th:field="*{complemento}">
-			<p>Campo secreto</p>
-			<input type="text" name="secreto" id="secreto">
-		</div>
+		
 		<input type="submit" value="Cadastrar" id="registrar-btn">
-		-->
 	</form>
 	</div>
 </body>

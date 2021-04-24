@@ -40,6 +40,14 @@ input{
     width: 100%;
 }
 
+#nomeProduto, #marca{
+    width: 100%;
+}
+
+#preço, #peso, #altura, #largura, #profundidade{
+    width: 15%;
+}
+
 p{
     margin-top: 10px;
 }
@@ -57,4 +65,24 @@ p{
 
 #registrar-btn:hover{
     background-color: rgb(22, 68, 24);
+}
+
+#genero{
+    display: flex;
+}
+
+#genero select{
+    margin-top: 10px;
+    margin-left: 5px;
+    border-bottom: 2px solid rgb(52, 131, 56);
+}
+
+#estado{
+    display: flex;
+}
+
+#estado select{
+    margin-top: 10px;
+    margin-left: 5px;
+    border-bottom: 2px solid rgb(52, 131, 56);
 }

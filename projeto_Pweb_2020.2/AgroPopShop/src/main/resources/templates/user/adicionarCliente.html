@@ -23,22 +23,54 @@
 	<form method="POST" th:object="${cliente}" th:action="@{/adicionarCliente}" id="form-cadastro-cliente">
 		<div class="campos">	
 			<p>Nome Completo<p>
-			<input type="text" name="nome" id="nome" th:field="*{nomeCompleto}">
+			<input type="text" name="name" id="nome" th:field="*{nomeCompleto}">
 			<p>e-Mail<p>
 			<input type="email" name="email" id="email" th:field="*{email}">
 		</div>
 		<div id="genero">
 			<p class="sexo" id="sexo">Gênero:</p>
-			<p><input type="radio" name="sexo" id="sexo1" value="Masculino" th:field="*{genero}" required>Masculino</p>
-			<p><input type="radio" name="sexo" id="sexo2" value="Feminino" th:field="*{genero}"  required>Feminino</p>
-			<p><input type="radio" name="sexo" id="sexo3" value="Não Informado" th:field="*{genero}" required>Não informar</p>
+			<select th:field="*{genero}" id="select-genero">
+				<option value="Masculino">Masculino</option>
+				<option value="Feminino">Feminino</option>
+				<option value="Não Informado">Não Informar</option>	
+			</select>
 		</div>
 		<div class="campos">
 			<p>Cep</p>
 			<input type="text" name="cep" id="cep" placeholder="Ex. 12345000" th:field="*{cep}">
-			<p>Estado</p>
-			<input type="text" name="estado" id="estado" th:field="*{uf}">
-			<p>cidade</p>
+			<div id="estado">
+			<p>Estado:</p>
+			<select th:field="*{uf}" id="select-uf">
+				<option value="AC">AC</option>
+				<option value="AL">AL</option>
+				<option value="AP">AP</option>
+				<option value="AM">AM</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="DF">DF</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MT">MT</option>
+				<option value="MS">MS</option>
+				<option value="MG">MG</option>
+				<option value="PA">PA</option>
+				<option value="PB">PB</option>
+				<option value="PR">PR</option>
+				<option value="PE">PE</option>
+				<option value="PI">PI</option>
+				<option value="RJ">RJ</option>
+				<option value="RN">RN</option>
+				<option value="RS">RS</option>
+				<option value="RO">RO</option>
+				<option value="RR">RR</option>
+				<option value="SC">SC</option>
+				<option value="SP">SP</option>
+				<option value="SE">SE</option>
+				<option value="TO">TO</option>
+			</select>
+		</div>
+			<p>Cidade</p>
 			<input type="text" name="cidade" id="cidade" th:field="*{cidade}">
 			<p for="bairro">Bairro</p>
 			<input type="text" name="bairro" id="bairro" th:field="*{bairro}">
