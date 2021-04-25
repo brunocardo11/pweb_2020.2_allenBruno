@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta codigoSecreto="1696690584">
 <link rel="stylesheet" th:href="@{/css/style.css}">
 <link rel="stylesheet" th:href="@{/css/style-info-cliente.css}">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 <link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
-<title>Admin AgroPopShop - by allenBruno</title>
+<title>AgroPopShop - by allenBruno</title>
 </head>
 <body>
 	<ul>
@@ -33,6 +34,10 @@
 		<div id="email-info-cliente">
 			<h3>E-mail:</h3>
 			<p><a th:href="'mailto:' +${cliente.email}"th:text="${cliente.email}"></a></p>
+		</div>
+		<div id="telefone-info-cliente">
+			<h3>Telefone:</h3>
+			<p th:text="${cliente.telefone}"></p>
 		</div>
 		<div id="cep-info-cliente">
 			<h3>CEP:</h3>

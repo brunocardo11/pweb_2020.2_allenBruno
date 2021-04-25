@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta codigoSecreto="1696690584">
     <link rel="stylesheet" th:href="@{/css/style.css}">
 	<link rel="stylesheet" th:href="@{/css/style-cadastro.css}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
-    <title>PWeb - by allenBruno</title>
+    <title>AgroPopShop - by allenBruno</title>
 </head>
 <body>
 	<ul>
@@ -28,6 +29,8 @@
 			<input type="text" name="nome" id="nome" th:field="*{nomeCompleto}">
 			<p>e-Mail<p>
 			<input type="email" name="email" id="email" th:field="*{email}">
+			<p>Telefone</p>
+			<input type="text" class="telefone" placeholder="Ex.: (00) 0000-0000" th:field="*{telefone}">
 		</div>
 		<div id="genero">
 			<p class="sexo" id="sexo">Gênero:</p>

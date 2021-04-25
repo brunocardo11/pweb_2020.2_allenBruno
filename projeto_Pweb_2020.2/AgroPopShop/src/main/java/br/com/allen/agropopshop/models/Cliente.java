@@ -24,7 +24,15 @@ public class Cliente implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	private String nomeCompleto, uf, cidade, bairro, rua, numero, complemento,  email, genero, cep;
+	private String nomeCompleto, uf, cidade, bairro, rua, numero, complemento,  email, genero, cep, telefone;
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 
 	public long getId() {
 		return id;

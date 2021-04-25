@@ -65,6 +65,16 @@
     border-bottom: 2px solid rgb(44, 133, 32);
 }
 
+#telefone-info-cliente{
+    display:flex;
+}
+
+#telefone-info-cliente p{
+    padding-left: 5px;
+    padding-top: 3px;
+    border-bottom: 2px solid rgb(44, 133, 32);
+}
+
 #cep-info-cliente{
     display:flex;
 }
