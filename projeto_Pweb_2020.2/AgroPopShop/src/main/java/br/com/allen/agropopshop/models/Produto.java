@@ -25,7 +25,7 @@ public class Produto implements Serializable{
 	private long id;
 	
 	private String nomeProduto, marca;
-	private double altura, largura, profundidade, peso, preço;
+	private double altura, largura, profundidade, peso, preco;
 	
 	public long getId() {
 		return id;
@@ -69,11 +69,11 @@ public class Produto implements Serializable{
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
-	public double getPreço() {
-		return preço;
+	public double getPreco() {
+		return preco;
 	}
-	public void setPreço(double preço) {
-		this.preço = preço;
+	public void setPreco(double preco) {
+		this.preco = preco;
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;

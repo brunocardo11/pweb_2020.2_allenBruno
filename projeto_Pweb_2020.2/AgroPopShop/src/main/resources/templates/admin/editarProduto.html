@@ -21,8 +21,8 @@
 	  </ul>
 
 	<div id="container-cadastro-cliente">
-	<h1>Cadastro de produtos</h1>
-	<form method="POST" th:object="${produto}" th:action="@{/admin/adicionarProduto}" id="form-cadastro-cliente">
+	<h1>Edição de produtos</h1>
+	<form method="POST" th:object="${produto}" th:action="@{/editarProduto/{id}(id=${produto.id})}" id="form-cadastro-cliente">
 		<div class="campos">	
 			<p>Nome do produto<p>
 			<input type="text" name="nome" id="nomeProduto" th:field="*{nomeProduto}">

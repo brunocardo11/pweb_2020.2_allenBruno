@@ -39,7 +39,7 @@ public class ClienteController {
 	
 	//Retorna o formulário de cadastro de clientes
 	@GetMapping("/adicionarCliente")
-	public ModelAndView formAdicionarCliente() { 
+	public ModelAndView formAdicionarCliente() {
 		ModelAndView mav = new ModelAndView("user/adicionarCliente");
 		mav.addObject(new Cliente());
 		return mav;
@@ -49,8 +49,9 @@ public class ClienteController {
 	@PostMapping("/adicionarCliente")
 	public String adicionarCliente(Cliente c) {
 		this.clienteRepo.save(c);
-		return "redirect:/";
+		return "redirect:/listarClientes";
 	}
+	
 	
 	//Remover cliente
 	@GetMapping("/remover/{id}")
