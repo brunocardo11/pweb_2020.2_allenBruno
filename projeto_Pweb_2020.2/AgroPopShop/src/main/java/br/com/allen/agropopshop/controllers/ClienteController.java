@@ -86,7 +86,7 @@ public class ClienteController {
 	
 	@GetMapping("/admin/infoCliente/{id}")
 		public ModelAndView infoCLiente(@PathVariable("id") long id) {
-		List<Dependente> lista1 = dependenteRepo.findAll();
+		List<Dependente> lista1 = dependenteRepo.findByIdPrincipal(id);
 		Cliente cliente = clienteRepo.findById(id)
 				.orElseThrow(() -> new IllegalArgumentException("ID inválido:" + id));
 		ModelAndView mav = new ModelAndView("admin/infoCliente");
