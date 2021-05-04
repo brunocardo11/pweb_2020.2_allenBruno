@@ -11,13 +11,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.com.allen.agropopshop.models.Cliente;
+import br.com.allen.agropopshop.models.Dependente;
 import br.com.allen.agropopshop.repositories.ClienteRepository;
+import br.com.allen.agropopshop.repositories.DependenteRepository;
 
 @Controller
 @RequestMapping("/")
 public class ClienteController {
 	@Autowired
 	private ClienteRepository clienteRepo;
+	
+	@Autowired
+	private DependenteRepository dependenteRepo;
 	
 	ClienteController(ClienteRepository clienteRepo){
 		this.clienteRepo = clienteRepo;
@@ -81,12 +86,21 @@ public class ClienteController {
 	
 	@GetMapping("/admin/infoCliente/{id}")
 		public ModelAndView infoCLiente(@PathVariable("id") long id) {
+		List<Dependente> lista1 = dependenteRepo.findAll();
 		Cliente cliente = clienteRepo.findById(id)
 				.orElseThrow(() -> new IllegalArgumentException("ID inválido:" + id));
-		
 		ModelAndView mav = new ModelAndView("admin/infoCliente");
+		mav.addObject("dependentes", lista1);
 		mav.addObject(cliente);
 		return mav;
+	}
+
+	public DependenteRepository getDependenteRepo() {
+		return dependenteRepo;
+	}
+
+	public void setDependenteRepo(DependenteRepository dependenteRepo) {
+		this.dependenteRepo = dependenteRepo;
 	}
 
 }
