@@ -74,6 +74,9 @@
 			<div id="remover-info-cliente">
 				<p><a th:href="@{/remover/{id}(id=${cliente.id})}">Remover</a></p>
 			</div>
+			<div id="cad-dependente-info-cliente">
+				<p><a th:href="@{/adicionarDependente/{id}(id=${cliente.id})}">Cadastrar Dependente</a></p>
+			</div>
 		</div>
 	</div>
 
@@ -88,6 +91,8 @@
 					<th>Nome</th>
 					<th>Gênero</th>
 					<th>Data de Nascimento</th>
+					<th>Editar</th>
+					<th>Remover</th>
 						
 				</tr>
 			</thead>
@@ -97,6 +102,8 @@
 				<td th:text="${dependente.nomeCompleto}"></td>
 				<td th:text="${dependente.genero}"></td>
 				<td th:text="${dependente.dataNascimento}"></td>
+				<td><a th:href="@{/editarProduto/}">Editar</a></td>
+					<td><a th:href="@{/removerDependente/{id}(id=${dependente.id})}">Remover</a></td>
 					
 					</tr>
 			</tbody>

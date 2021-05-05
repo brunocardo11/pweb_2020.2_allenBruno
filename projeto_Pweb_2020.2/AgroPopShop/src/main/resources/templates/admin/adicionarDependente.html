@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta codigoSecreto="1696690584">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{/css/style-cadastro.css}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="icon" href="../public/favicon.ico" type="image/x-icon"/>
+    <title>Admin AgroPopShop - by allenBruno</title>
+</head>
+<body>
+	<ul>
+		<li><a th:href="@{/}">Início</a></li>
+		<li><a th:href="@{/adicionarCliente}">Cadastro de clientes</a></li>
+		<li><a th:href="@{/listarClientes}">Listar Clientes</a></li>
+		<li><a th:href="@{/admin/adicionarProduto}">Cadastro de produtos</a></li>
+		<li><a th:href="@{/admin/listarProdutos}">Listar produtos</a></li>
+		<li style="float:right"><a href="#about">Sobre o Site</a></li>
+	  </ul>
+
+	<div id="container-cadastro-cliente">
+	<h1>Cadastro de dependentes</h1>
+	<form id="form-cadastro-cliente" method="POST" th:object="${dependente}" th:action="@{/adicionarDependente}">
+		<div class="campos">
+			<div th:object="${cliente}">
+			<p>Por favor insira esse número no campo de id do responsável (solução temporária, futuramente será resolvido com javaScript)<p>
+			<p id="preco" th:text="${cliente.id}"></p>
+			</div>
+			<div>
+			<p>Id do responsável<p>
+			<input type="text" name="preco" id="preco" th:field="*{idPrincipal}">
+			</div>		
+			<p>Nome completo<p>
+			<input type="text" name="nome" id="nomeProduto" th:field="*{nomeCompleto}">
+			<p>Data de nascimento<p>
+			<input type="date" name="marca" id="marca" th:field="*{dataNascimento}">
+			<div id="genero">
+			<p class="sexo" id="sexo">Gênero:</p>
+			<select th:field="*{genero}" id="select-genero">
+				<option value="Masculino">Masculino</option>
+				<option value="Feminino">Feminino</option>
+				<option value="Não Informado">Não Informar</option>	
+			</select>
+		</div>
+		</div>
+		
+		<input type="submit" value="Cadastrar" id="registrar-btn">
+	</form>
+	</div>
+</body>
+</html>

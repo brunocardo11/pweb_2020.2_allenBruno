@@ -5,7 +5,5 @@ import java.util.List;
 import br.com.allen.agropopshop.models.Dependente;
 
 public interface DependenteRepository extends JpaRepository<Dependente, Long> {
-	
-	List<Dependente> findByIdPrincipal (long id);
-
+	List<Dependente> findByIdPrincipal (String id);
 }

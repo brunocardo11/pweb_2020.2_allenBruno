@@ -86,7 +86,8 @@ public class ClienteController {
 	
 	@GetMapping("/admin/infoCliente/{id}")
 		public ModelAndView infoCLiente(@PathVariable("id") long id) {
-		List<Dependente> lista1 = dependenteRepo.findByIdPrincipal(id);
+		String idCliente=Long.toString(id);
+		List<Dependente> lista1 = dependenteRepo.findByIdPrincipal(idCliente);
 		Cliente cliente = clienteRepo.findById(id)
 				.orElseThrow(() -> new IllegalArgumentException("ID inválido:" + id));
 		ModelAndView mav = new ModelAndView("admin/infoCliente");
@@ -101,6 +102,16 @@ public class ClienteController {
 
 	public void setDependenteRepo(DependenteRepository dependenteRepo) {
 		this.dependenteRepo = dependenteRepo;
+	}
+	
+	@GetMapping("/adicionarDependente/{id}")
+	public ModelAndView cadastrarDependente (@PathVariable("id") long id) {
+		Cliente cliente = clienteRepo.findById(id)
+				.orElseThrow(() -> new IllegalArgumentException("ID inválido:" + id));
+		ModelAndView mav = new ModelAndView("admin/adicionarDependente");
+		mav.addObject(new Dependente());
+		mav.addObject(cliente);
+		return mav;
 	}
 
 }

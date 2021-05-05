@@ -1,25 +1,44 @@
 package br.com.allen.agropopshop.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import br.com.allen.agropopshop.models.Dependente;
+import br.com.allen.agropopshop.repositories.ClienteRepository;
+import br.com.allen.agropopshop.repositories.DependenteRepository;
 
 @Controller
 public class DependenteController {
+	ClienteRepository clienteRepo;
 	
-	/*@GetMapping("/admin/infoCliente/1")
-	public ModelAndView listarDependentes() {
-		List<Dependente> lista = dependenteRepo.findAll();
-		ModelAndView mav = new ModelAndView("admin/listarDependentes");
-		mav.addObject("dependentes", lista);
-	return mav;
+	@Autowired
+	private DependenteRepository dependenteRepo;
 	
-}*/
-	/*
-	@GetMapping("/admin/infoCliente")
-	public ModelAndView listarDependentes() {
-		List<Dependente> lista = dependenteRepo.findAll();
-		ModelAndView mav1 = new ModelAndView("admin/infoCliente");
-		mav1.addObject("dependente", lista);
-		return mav1;
-	}*/
+	@Autowired
+	public DependenteRepository getDependenteRepo() {
+		return dependenteRepo;
+	}
 
+	public void setDependenteRepo(DependenteRepository dependenteRepo) {
+		this.dependenteRepo = dependenteRepo;
+	}
+	
+	@GetMapping("/removerDependente/{id}")
+	public ModelAndView removerDependente(@PathVariable("id") long id){
+		Dependente remover = dependenteRepo.findById(id)
+		.orElseThrow(() -> new IllegalArgumentException("ID inválido:" + id));
+		
+		dependenteRepo.delete(remover);
+		return new ModelAndView("redirect:/listarClientes");
+	}
+	
+	@PostMapping("/adicionarDependente")
+	public String adicionarDependente(Dependente d) {
+		this.dependenteRepo.save(d);
+		return "redirect:/listarClientes";
+	}
 }

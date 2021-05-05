@@ -159,10 +159,11 @@
 }
 
 #editar-info-cliente{
+	padding-top: 10px;
     background-color: rgb(44, 133, 32);
     width: 100px;
     position: relative;
-    left: 30%;
+    left: 10%;
     border-radius: 20px;
 }
 
@@ -176,10 +177,11 @@
 }
 
 #remover-info-cliente{
+	padding-top: 10px;
     background-color: rgb(44, 133, 32);
     width:100px;
     position: relative;
-    left: 35%;
+    left: 20%;
     border-radius: 20px;
 }
 
@@ -189,5 +191,22 @@
 }
 
 #remover-info-cliente:hover{
+    background-color: rgb(36, 109, 26);
+}
+
+#cad-dependente-info-cliente{
+    background-color: rgb(44, 133, 32);
+    width: 100px;
+    position: relative;
+    left: 30%;
+    border-radius: 20px;
+}
+
+#cad-dependente-info-cliente a{
+    color: white;
+    text-decoration: none;
+}
+
+#cad-dependente-info-cliente:hover{
     background-color: rgb(36, 109, 26);
 }

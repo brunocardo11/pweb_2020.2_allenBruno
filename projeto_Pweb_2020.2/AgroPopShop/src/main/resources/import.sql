@@ -2,4 +2,6 @@
 INSERT INTO clientes (nome_Completo, email, telefone, cep, uf, cidade, bairro, rua, numero, complemento, genero) VALUES ('Maria da Penha Maia Fernandes', 'mariaDaPenha@gov.br', '84923234321', '59510-030', 'RN', 'Natal', 'Centro', 'Rua flores', '23', 'casa', 'Feminino');
 INSERT INTO clientes (nome_Completo, email, telefone, cep, uf, cidade, bairro, rua, numero, complemento, genero) VALUES ('José camara', 'josecamara@gov.br', '1174343212', '59520-000', 'SP', 'São Paulo', 'Centro', 'Rua Rosas', '234', 'Apartamento 3', 'Masculino');
 INSERT INTO produtos (nome_Produto, marca, preco, altura, largura, profundidade, peso) VALUES ('Fertilizante', 'Fertipus', 23.50, 12, 5, 2, 1.5);
-INSERT INTO dependentes (nome_Completo, data_nascimento, genero, id_principal) VALUES ('Jorge', parseDateTime('21/06/1839','dd/MM/yyyy'), 'masculino', 1);
+INSERT INTO dependentes (nome_Completo, data_nascimento, genero, id_principal) VALUES ('Jorge Alcantara', parseDateTime('21/06/1839','dd/MM/yyyy'), 'Masculino', 1);
+INSERT INTO dependentes (nome_Completo, data_nascimento, genero, id_principal) VALUES ('Sirius Black', parseDateTime('15/02/1842','dd/MM/yyyy'), 'Masculino', 2);
+INSERT INTO dependentes (nome_Completo, data_nascimento, genero, id_principal) VALUES ('Sandra Moreira', parseDateTime('24/06/1992','dd/MM/yyyy'), 'Feminino', 2);
