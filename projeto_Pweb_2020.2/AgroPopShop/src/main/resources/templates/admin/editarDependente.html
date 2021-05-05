@@ -24,24 +24,26 @@
 	<div id="container-cadastro-cliente">
 	<h1>Edição de dependentes</h1>
 	<form method="POST" th:object="${dependente}" th:action="@{/editarDependente/{id}(id=${dependente.id})}" id="form-cadastro-cliente">
-		<div class="campos">	
-			<p>Nome do produto<p>
-			<input type="text" name="nome" id="nomeProduto" th:field="*{nomeProduto}">
-			<p>Marca<p>
-			<input type="text" name="marca" id="marca" th:field="*{marca}">
-			<p>Preço<p>
-			<input type="text" name="preco" id="preco" th:field="*{preco}" placeholder="EX:12.58" title="EX:12.58">
-			<p>Peso<p>
-			<input type="text" name="peso" id="peso" th:field="*{peso}" placeholder="EX:0.3" title="EX:0.3">
-			<p>Altura<p>
-			<input type="text" name="altura" id="altura" th:field="*{altura}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
-			<p>Largura<p>
-			<input type="text" name="largura" id="largura" th:field="*{largura}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
-			<p>Profundidade<p>
-			<input type="text" name="profundidade" id="profundidade" th:field="*{profundidade}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
+		<div class="campos">
+			<div>
+			<p>Id do responsável<p>
+			<input type="text" name="preco" id="preco" th:field="*{idPrincipal}" readonly=“true”>
+			</div>
+			<div>	
+			<p>Nome completo<p>
+			<input type="text" name="nome" id="nomeProduto" th:field="*{nomeCompleto}">
+			<p>Data de nascimento<p>
+			<input type="date" name="marca" id="marca" th:field="*{dataNascimento}">
+			<div id="genero">
+			<p class="sexo" id="sexo">Gênero:</p>
+			<select th:field="*{genero}" id="select-genero">
+				<option value="Masculino">Masculino</option>
+				<option value="Feminino">Feminino</option>
+				<option value="Não Informado">Não Informar</option>	
+			</select>
 		</div>
-		
-		<input type="submit" value="Cadastrar" id="registrar-btn">
+		</div>
+		<input type="submit" value="Editar" id="registrar-btn">
 	</form>
 	</div>
 </body>

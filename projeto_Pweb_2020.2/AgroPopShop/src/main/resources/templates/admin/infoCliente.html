@@ -102,7 +102,7 @@
 				<td th:text="${dependente.nomeCompleto}"></td>
 				<td th:text="${dependente.genero}"></td>
 				<td th:text="${dependente.dataNascimento}"></td>
-				<td><a th:href="@{/editarProduto/}">Editar</a></td>
+				<td><a th:href="@{/editarDependente/{id}(id=${dependente.id})}">Editar</a></td>
 					<td><a th:href="@{/removerDependente/{id}(id=${dependente.id})}">Remover</a></td>
 					
 					</tr>

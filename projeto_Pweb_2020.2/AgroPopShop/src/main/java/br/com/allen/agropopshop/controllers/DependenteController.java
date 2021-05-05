@@ -41,4 +41,20 @@ public class DependenteController {
 		this.dependenteRepo.save(d);
 		return "redirect:/listarClientes";
 	}
+	
+	@GetMapping("/editarDependente/{id}")
+	public ModelAndView editarDependente (@PathVariable("id") long id) {
+		Dependente dependente = dependenteRepo.findById(id)
+				.orElseThrow(() -> new IllegalArgumentException("ID inválido:" + id));
+		
+		ModelAndView ModelAndView = new ModelAndView("admin/editarDependente");
+		ModelAndView.addObject(dependente);
+		return ModelAndView;
+	}
+	
+	@PostMapping("/editarDependente/{id}")
+	public ModelAndView editarPessoa(@PathVariable("id")long id, Dependente dependente) {
+		this.dependenteRepo.save(dependente);
+		return new ModelAndView( "redirect:/listarClientes");
+	}
 }
