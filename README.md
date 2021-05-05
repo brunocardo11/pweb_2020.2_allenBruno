@@ -47,5 +47,5 @@ UseStories | Estado | Tarefa atual | Início | Prazo final
 :---: | :---: | :---: | :---: | :---:
 UseStory 1 | 🟢 | Concluído | 13/04/2021 | 19/04/2021
 UseStory 2 | 🟢 | Concluído |  20/04/2021 | 26/04/2021
-UseStory 3 | 🔴 | Edição de dependentes | 27/04/2021 | 03/05/2021
-UseStory 4 | ⚪️ | Não iniciado | 04/05/2021 | 10/05/2021
+UseStory 3 | 🟢 | Concluído | 27/04/2021 | 03/05/2021
+UseStory 4 | 🔵 | Comentando o código | 04/05/2021 | 10/05/2021
