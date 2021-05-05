@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta codigoSecreto="1696690584">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{/css/style-cadastro.css}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="icon" href="../public/favicon.ico" type="image/x-icon"/>
+    <title>Admin AgroPopShop - by allenBruno</title>
+</head>
+<body>
+	<ul>
+		<li><a th:href="@{/}">Início</a></li>
+		<li><a th:href="@{/adicionarCliente}">Cadastro de clientes</a></li>
+		<li><a th:href="@{/listarClientes}">Listar Clientes</a></li>
+		<li><a th:href="@{/admin/adicionarProduto}">Cadastro de produtos</a></li>
+		<li><a th:href="@{/admin/listarProdutos}">Listar produtos</a></li>
+		<li style="float:right"><a href="#about">Sobre o Site</a></li>
+	  </ul>
+
+	<div id="container-cadastro-cliente">
+	<h1>Edição de dependentes</h1>
+	<form method="POST" th:object="${dependente}" th:action="@{/editarDependente/{id}(id=${dependente.id})}" id="form-cadastro-cliente">
+		<div class="campos">	
+			<p>Nome do produto<p>
+			<input type="text" name="nome" id="nomeProduto" th:field="*{nomeProduto}">
+			<p>Marca<p>
+			<input type="text" name="marca" id="marca" th:field="*{marca}">
+			<p>Preço<p>
+			<input type="text" name="preco" id="preco" th:field="*{preco}" placeholder="EX:12.58" title="EX:12.58">
+			<p>Peso<p>
+			<input type="text" name="peso" id="peso" th:field="*{peso}" placeholder="EX:0.3" title="EX:0.3">
+			<p>Altura<p>
+			<input type="text" name="altura" id="altura" th:field="*{altura}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
+			<p>Largura<p>
+			<input type="text" name="largura" id="largura" th:field="*{largura}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
+			<p>Profundidade<p>
+			<input type="text" name="profundidade" id="profundidade" th:field="*{profundidade}" placeholder="Em centímetros EX:15.4" title="Em centímetros EX:15.4">
+		</div>
+		
+		<input type="submit" value="Cadastrar" id="registrar-btn">
+	</form>
+	</div>
+</body>
+</html>
