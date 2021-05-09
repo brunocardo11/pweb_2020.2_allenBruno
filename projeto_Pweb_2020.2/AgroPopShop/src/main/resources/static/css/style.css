@@ -31,3 +31,32 @@ ul {
     background-color: rgb(255, 255, 255);
     color: black;
   }
+
+  #banner{
+    width: 100%;
+  }
+  
+  #lista-loja{
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+#lista-loja td{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#lista-loja table{
+    border-collapse: collapse;
+    position: relative;
+}
+
+#lista-loja table, th, td{
+    border: 1px solid black;
+}
+
+#lista-loja th{
+    background-color: rgb(44, 133, 32);
+    color: white;
+}

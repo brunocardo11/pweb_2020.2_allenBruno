@@ -66,4 +66,12 @@ public class ProdutoController {
 		this.produtoRepo.save(produto);
 		return new ModelAndView( "redirect:/admin/listarProdutos");
 	}
+	
+	@GetMapping("/")
+	public ModelAndView listaLoja() {
+		List<Produto> lista = produtoRepo.findAll();
+		ModelAndView ModelAndView = new ModelAndView("/index");
+		ModelAndView.addObject("produtos", lista);
+		return ModelAndView;
+	}
 }

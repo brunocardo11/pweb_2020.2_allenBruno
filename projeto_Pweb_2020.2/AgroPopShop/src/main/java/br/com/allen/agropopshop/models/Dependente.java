@@ -35,7 +35,7 @@ public class Dependente implements Serializable{
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private LocalDate  dataNascimento;
 	
-	private String idPrincipal;
+	private long idPrincipal;
 	
 	public long getId() {
 		return id;
@@ -61,11 +61,11 @@ public class Dependente implements Serializable{
 		this.genero = genero;
 	}
 
-	public String getIdPrincipal() {
+	public long getIdPrincipal() {
 		return idPrincipal;
 	}
 
-	public void setIdPrincipal(String idPrincipal) {
+	public void setIdPrincipal(long idPrincipal) {
 		this.idPrincipal = idPrincipal;
 	}
 

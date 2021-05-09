@@ -11,6 +11,7 @@
     <title>AgroPopShop - by allenBruno</title>
 </head>
 <body>
+	<img src="image/banner.png" id="banner" alt="banner loja">
 	<ul>
 		<li><a th:href="@{/}">Início</a></li>
 		<li><a th:href="@{/adicionarCliente}">Cadastro de clientes</a></li>
@@ -19,6 +20,24 @@
 		<li><a th:href="@{/admin/listarProdutos}">Listar produtos</a></li>
 		<li style="float:right"><a href="#about">Sobre o Site</a></li>
 	  </ul>
-	<h1>Página da Loja</h1>
+	<div id="lista-loja">
+		<table>
+			<thead>
+				<tr>
+					<th>Nome do produto</th>
+					<th>Preço</th>
+					<th>Comprar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="produto: ${produtos}">
+					<td th:text="${produto.nomeProduto}"></td>
+					<td th:text="${produto.preco}"></td>
+					<td><a th:href="@{/editarProduto/{id}(id=${produto.id})}">Comprar</a></td>
+					</tr>
+			</tbody>
+
+		</table>
+	</div>
 </body>
 </html>
