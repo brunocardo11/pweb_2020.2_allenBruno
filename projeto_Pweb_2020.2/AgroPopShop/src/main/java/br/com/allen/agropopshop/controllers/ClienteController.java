@@ -113,4 +113,11 @@ public class ClienteController {
 		return mav;
 	}
 
+	@GetMapping("/contato")
+	public ModelAndView contatowhatsapp() {
+		ModelAndView mav = new ModelAndView("user/contato");
+		mav.addObject(new Cliente());
+		return mav;
+	}
+
 }
