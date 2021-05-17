@@ -54,5 +54,6 @@ UseStory 4 | 🔴 | Corrigindo erros | 04/05/2021 | 10/05/2021
 
 UseStories | Estado | Tarefa atual | Início | Prazo final
 :---: | :---: | :---: | :---: | :---:
-UseStory 6 | 🔵 | Implementando busca de produtos | 13/04/2021 | 19/04/2021
+UseStory 8 | 🔵 | Implementando Contato WhatsApp | 11/05/2021 | 17/04/2021
+UseStory 6 | 🔵 | Implementando busca de produtos | 12/05/2021 | 24/05/2021
 
